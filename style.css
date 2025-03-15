@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'EmynamCrew-Regular'; 
-    src: url('fonts/EmynamCrew-Regular.ttf'); 
+    font-family: 'Tommy'; 
+    src: url('fonts/tommy font.ttf'); 
 }
 html{
     display: flex;
@@ -9,21 +9,56 @@ html{
     font-family:Arial, Helvetica, sans-serif;
 }
 h1{
-    font-family:Times;
+    z-index:10;
+    position:absolute;
+    font-family: Times;
     margin-top:200px;
     margin-bottom:0px;
     color:#db5123;
     font-size:300px;
-    text-shadow:2.5px 5px rgb(0, 0, 0, 0.25);
+    text-shadow:2.5px 5px rgba(107, 107, 107, 0.572);
+}
+h2{
+    font-family: Heuristica;
+    font-weight:bold;
+    font-size:100px;
+    color:#db5123;
+}
+p{
+    font-size:50px;
+}
+.nav-button{
+    font-family: tommy;
+    font-size: 55px;
+    padding:20px;
+    padding-left:30px;
+    padding-right:30px;
+    margin-right:30px;
+    border-radius: 50px;
+    background-color:#b4cf5d;
+    color: #569454;
+    border:solid;
+    border-width: 8px;
+
+}
+.nav-button:hover{
+
+    background-color:#5a9f54;
+    color: #b4cf5d;
 }
 #louie-cutout{
+    z-index:0;
+    margin-top: 9px;
     justify-content:right;
-    margin-left:000px;
+    margin-left:2000px;
     width: 1000px;
 }
 #main-content{
+    position:absolute;
+    box-shadow: -5px 3px 8px #110e0158, 5px 5px 8px #110e0158;
     background-color: rgb(249, 242, 227);
-    margin-top: -150px;
-    height: 40000px;
-    width: 2500px;
+    margin-top:400px;
+    height: 10000px;
+    width: 2650px;
+    padding:200px;
 }
