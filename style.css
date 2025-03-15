@@ -1,0 +1,11 @@
+html{
+    background-color:antiquewhite;
+}
+#main-content{
+    position:relative;
+    background-color:aqua;
+    margin: 10em;
+    height: 100em;
+    box-shadow: 0.25em 0.5em rgba(0, 0, 0, 0.2);
+    top: 100em;
+}
