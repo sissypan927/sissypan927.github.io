@@ -2,63 +2,79 @@
     font-family: 'Tommy'; 
     src: url('fonts/tommy font.ttf'); 
 }
+@font-face {
+    font-family: 'Butler-Medium'; 
+    src: url('fonts/Butler_Medium.otf'); 
+}
+@font-face {
+    font-family: 'Times-Sans-Serif'; 
+    src: url('fonts/TIMESS__.ttf'); 
+}
 html{
     display: flex;
     background-color:#f5c918;
     justify-content:center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Times;
 }
 h1{
     z-index:10;
+    font-weight:bold;
     position:absolute;
     font-family: Times;
-    margin-top:200px;
+    margin-top:100px;
     margin-bottom:0px;
+    margin-left:145px;
     color:#db5123;
-    font-size:300px;
-    text-shadow:2.5px 5px rgba(107, 107, 107, 0.572);
+    font-size:150px;
+    text-shadow:2px 3px rgba(107, 107, 107, 0.572);
 }
 h2{
-    font-family: Heuristica;
+    font-family: Butler-Medium;
     font-weight:bold;
-    font-size:100px;
+    font-size:45px;
     color:#db5123;
+    margin-bottom: -20px;
 }
 p{
-    font-size:50px;
+    font-size:25px;
+    font-weight:lighter;
 }
 .nav-button{
     font-family: tommy;
-    font-size: 55px;
-    padding:20px;
-    padding-left:30px;
-    padding-right:30px;
-    margin-right:30px;
-    border-radius: 50px;
+    font-size: 21px;
+    padding: 5px 10px 5px 10px;;
+    padding-right:15px;
+    margin-right:10 px;
+    border-radius: 25px;
     background-color:#b4cf5d;
     color: #569454;
     border:solid;
-    border-width: 8px;
+    border-width: 4px;
 
 }
 .nav-button:hover{
-
     background-color:#5a9f54;
     color: #b4cf5d;
 }
+#nav{
+    display:flex;
+    gap: 10px;
+    margin-bottom: 60px;
+}
 #louie-cutout{
     z-index:0;
-    margin-top: 9px;
+    margin-top: 4.5px;
     justify-content:right;
-    margin-left:2000px;
-    width: 1000px;
+    margin-left:1000px;
+    width: 500px;
 }
 #main-content{
+    margin-left: 145px;
     position:absolute;
     box-shadow: -5px 3px 8px #110e0158, 5px 5px 8px #110e0158;
     background-color: rgb(249, 242, 227);
-    margin-top:400px;
-    height: 10000px;
-    width: 2650px;
-    padding:200px;
+    margin-top:200px;
+    height: 5000px;
+    width: 1000px;
+    padding:100px;
 }
