@@ -116,7 +116,7 @@ button{
     margin-top:6px;
     z-index:3;
     position: fixed;
-    right: 30px;
+    right: -1000px;
     border-radius:30px;
 }
 #nav{
