@@ -7,19 +7,101 @@
 
 </head>
 <body>
+    <button id= "music-button" onClick="openMusic()"></button>
+    <script>
+        function openMusic() {
+            var element = document.querySelector('#music-open');
+            var curr = getComputedStyle(element).right;
+            if(curr==='30px'){
+                document.getElementById("music-open").style.right = "-1000px";
+            }
+            else{
+                document.getElementById("music-open").style.right = "30px";
+            }
+        }
+    </script>
+    <div id = music-open>
+        Now Playing: Aquarium City 
+    </div>
     <h1>Louie Zong</h1>
+    <p id = name>Website Created by Sissy Pan</p>
+    </script>
     <div id = "main-content">
         <div id = "nav">
             <!-- Buttons -->
-            <button class = "nav-button">About Louie Zong</button>
-            <button class = "nav-button">Louie's Games</button>
-            <button class = "nav-button">Louie's Art</button>
-            <br>
-            <button class = "nav-button">Louie's Animation</button>
-            <button class = "nav-button">Louie's Music</button>
+            <!--BOM??-->
+            <a href = #about><button class = "nav-button">About Louie Zong</button></a>
+            <a href = #games><button class = "nav-button">Games</button></a>
+            <a href = #art><button class = "nav-button">Art</button></a>
+            <a href = #animation><button class = "nav-button"> Animations</button></a>
+            <a href = #music><button class = "nav-button">Music</button></a>
         </div>
-        <h2>ABOUT LOUIE ZONG</h2>
-        <p>Louie Zong is a </p>
+        <div>
+            <!--About-->
+            <a name = about><h2>ABOUT LOUIE ZONG</h2></a>
+            <p>
+                Louie Zong is an artist, author, animator, musician, game developer, and virtuso in all things creative. He's worked on popular children tv shows such as 
+                <a href = "https://en.wikipedia.org/wiki/We_Bare_Bears">We Bare Bears</a>, <a href = "https://en.wikipedia.org/wiki/The_Ghost_and_Molly_McGee">The Ghost and Molly McGee</a>, and more. 
+                Louie Zong has also been nominated twice for the Emmy Awards for both his writing and animation work on animated shows.         
+                Find more of his work on <a href = "https://www.youtube.com/channel/UCdkkQvJoB0kGgYHCYwSkdww">Youtube</a> or on his <a href = "louiezong.com">portfolio!</a>
+            </p>
+            <br>
+        </div>
+        <div id = games>
+            <!--Games-->
+            <a name = "games"><h2>GAMES</h2></a>
+            <p>Here are some browser games he made! If you want to play his other games, go check out his portfolio!</p>
+            <div class= games-display>
+                <div class = game>
+                    <a href = "https://everydaylouie.itch.io/toad-in-the-hole">
+                    <img src = images/toad-in-the-hole.png>
+                    <p>Toad In A Hole</p>
+                    </a>
+                </div>
+                <div class = game>
+                    <a href = "https://everydaylouie.itch.io/windsor-road">
+                    <img src = images/Ovzat3.png>
+                    <p>windsor road</p>
+                    </a>
+                </div>
+            </div>
+            <div class = games-display>
+                <div class = game>
+                    <a href = "https://everydaylouie.itch.io/dreampiano">
+                    <img src = images/dream-piano.png>
+                    <p>dream.piano</p>
+                    </a>
+                </div>
+                <div class = game>
+                    <a href = "https://everydaylouie.itch.io/bird-race">
+                    <img src = images/bird-race.png>
+                    <p>Bird Race</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div>
+            <!--Art-->
+            <a name="art"></a><h2>ART</h2></a>
+        </div>
+        <div>
+            <!--Animation-->
+            <a name="animation"></a><h2>ANIMATIONS</h2></a>
+        </div>
+        <div>
+            <!--Music-->
+            <a name="music"><h2>MUSIC</h2></a>
+        </div>
+        <h2>LOUIE'S CREDIT CARD INFORMATION</h2>
+        <p>Thanks for reading 'til the end! Here's a little secret reward: Louie Zong's credit card information :)</p>
+        <button onClick="clickFunction()" >Click here to reveal</button>
+        <script>
+            <!--BOM-->
+            function clickFunction() {
+              alert('...Why would you press that button..? What were you going to do with his credit card... Shmorby is watching you...');
+            }
+        </script>
     </div>
     <img src = images/louietop.png alt = "Picture of Louie Zong playing the guitar" id = "louie-cutout">
 </body>

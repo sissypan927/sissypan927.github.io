@@ -7,17 +7,18 @@
     src: url('fonts/Butler_Medium.otf'); 
 }
 @font-face {
-    font-family: 'Times-Sans-Serif'; 
-    src: url('fonts/TIMESS__.ttf'); 
+    font-family: 'Butler'; 
+    src: url('fonts/Butler-RRegular.otf'); 
 }
 html{
     display: flex;
-    background-color:#f5c918;
+    background-color:#f5c118;
     justify-content:center;
-    font-family: Times;
+    font-family: Butler;
+    color:#4c261a;
 }
 h1{
-    z-index:10;
+    z-index:2;
     font-weight:bold;
     position:absolute;
     font-family: Times;
@@ -29,23 +30,63 @@ h1{
     text-shadow:2px 3px rgba(107, 107, 107, 0.572);
 }
 h2{
-    font-family: Butler-Medium;
+    font-family: tommy;
     font-weight:bold;
     font-size:45px;
     color:#db5123;
     margin-bottom: -20px;
 }
+a{
+   color:#3b8338; 
+}
 p{
     font-size:25px;
-    font-weight:lighter;
+}
+button{
+    font-family: tommy;
+    background-color:#f98f0d;
+    color: inherit;
+    border: solid;
+    border-color:#db5123;
+    border-width:3px;
+    font-size: 25px;
+    padding:10px;
+    border-radius:10px;
+}
+.game{
+    background-color:#b4cf5d;
+    text-align:center;
+    width: 350px;
+    padding:10px;
+    padding-top:25px;
+    box-shadow: -3px -3px 8px #110e0116, 3px 3px 8px #110e0116;
+    border-radius: 10px;
+
+}
+.game a{
+
+    color:#4c261a;
+    text-decoration:none;
+}
+.game:hover{
+    background-color:#64af3e;
+    box-shadow: -3px -3px 8px #110e012c, 3px 3px 8px #110e012c;
+    text-decoration: underline;
+
+}
+.games-display{
+
+    justify-content:center;
+    display:flex;
+    gap: 30px;
+    margin-top:30px;
 }
 .nav-button{
     font-family: tommy;
-    font-size: 21px;
-    padding: 5px 10px 5px 10px;;
-    padding-right:15px;
+    font-size: 30px;
+    padding: 10px 20px 10px 20px;;
     margin-right:10 px;
-    border-radius: 25px;
+    border-radius: 30px;
     background-color:#b4cf5d;
     color: #569454;
     border:solid;
@@ -56,14 +97,46 @@ p{
     background-color:#5a9f54;
     color: #b4cf5d;
 }
+#music-button{
+    z-index:5;
+    position:fixed;
+    background:url(images/music-icon.png);
+    padding:20px;
+    margin:10px;
+    background-color:#b4cf5d;
+    border-color:#b4cf5d;
+    border-radius: 30px;
+    margin-left:95%;
+}
+#music-open{
+    background-color:#b4cf5d;
+    padding:15px;
+    padding-right:50px;
+    font-size:20px;
+    margin-top:6px;
+    z-index:3;
+    position: fixed;
+    right: 30px;
+    border-radius:30px;
+}
 #nav{
     display:flex;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 60px;
+}
+#name{
+    font-size: 15px;
+    z-index:2;
+    position:absolute;
+    padding:10px;
+    margin-left:1146px;
+    margin-top:165px;
+    background-color:rgb(249, 242, 227);
+    box-shadow:-2px -3px 4px #110e0158;
 }
 #louie-cutout{
     z-index:0;
-    margin-top: 4.5px;
+    margin-top: 0px;
     justify-content:right;
     margin-left:1000px;
     width: 500px;
