@@ -4,26 +4,23 @@
     <meta name = "viewport" content="width=device-width, inital-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>Louie Zong Fan Page</title>
-
 </head>
-<body onload="playtheopening()">  
-    <audio id = "bg" src="audio/aquarium-city.mp3"></audio> 
-    <script>
-        function playtheopening(){
-            document.getElementById("bg").play();
-        }   
-    </script> 
+<body> 
     <button id= "music-button" onClick="openMusic()"></button>
+    <audio id = "bg" src="audio/aquarium-city.mp3" type = "audio/mp3"></audio> 
     <script>
         function openMusic() {
             var element = document.querySelector('#music-open');
             var curr = getComputedStyle(element).right;
             if(curr==='30px'){
                 document.getElementById("music-open").style.right = "-1000px";
+                document.getElementById("bg").currentTime = 0;
+                document.getElementById("bg").pause();
             }
             else{
                 document.getElementById("music-open").style.right = "30px";
-            }
+                document.getElementById("bg").play();
+            } 
         }
     </script>
     <div id = music-open>
@@ -70,18 +67,24 @@
                     <p>windsor road</p>
                     </a>
                 </div>
-            </div>
-            <div class = games-display>
                 <div class = game>
                     <a href = "https://everydaylouie.itch.io/dreampiano">
                     <img src = images/dream-piano.png>
                     <p>dream.piano</p>
                     </a>
                 </div>
+            </div>
+            <div class = games-display>
                 <div class = game>
                     <a href = "https://everydaylouie.itch.io/bird-race">
                     <img src = images/bird-race.png>
                     <p>Bird Race</p>
+                    </a>
+                </div>
+                <div class = game>
+                    <a href = "https://everydaylouie.itch.io/yahaha-beats">
+                    <img src = images/yahahabeats.png>
+                    <p>yahaha beats</p>
                     </a>
                 </div>
             </div>
@@ -98,7 +101,18 @@
         <div>
             <!--Music-->
             <a name="music"><h2>MUSIC</h2></a>
+            <button onClick = "playSong('audio/cheesy-street.mp3', 'CHEEZY STREET ft. Dante NK')"></button>
         </div>
+        <script>
+            function playSong(song, name)
+            {
+                document.getElementById("bg").setAttribute("src", song);
+                document.getElementById("music-open").style.right = "-1000px";
+                document.getElementById("music-open").innerHTML = 'Now playing: ' + name;
+                openMusic()
+            }
+        </script>
+
         <h2>LOUIE'S CREDIT CARD INFORMATION</h2>
         <p>Thanks for reading 'til the end! Here's a little secret reward: Louie Zong's credit card information :)</p>
         <button onClick="clickFunction()" >Click here to reveal</button>
