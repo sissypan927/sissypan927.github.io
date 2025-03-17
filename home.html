@@ -101,11 +101,11 @@
                <a href = #art> <button onClick = "prev()">prev</button><button href = #art onClick ="next()">next</button></a>
             </div>
             <script>
-                const imgs= ["images/art/dog.png", "images/art/3dlouie.png", "images/art/apple.png", "images/art/bird.png", "images/art/wbb.png"]
+                const imgs= ["images/art/dog.png", "images/art/3dlouie.png", "images/art/apple.png", "images/art/bird.png", "images/art/bam.jpg", "images/art/wbb.png"]
                 function prev(){
                     var curr = document.getElementById("display-img").getAttribute("src")
                     if(imgs.indexOf(curr) == 0){
-                        document.getElementById("display-img").setAttribute("src", imgs[4])
+                        document.getElementById("display-img").setAttribute("src", imgs[5])
                     }
                     else{
                         document.getElementById("display-img").setAttribute("src", imgs[imgs.indexOf(curr)-1])
@@ -113,7 +113,7 @@
                 }
                 function next(){
                     var curr = document.getElementById("display-img").getAttribute("src")
-                    if(imgs.indexOf(curr) == 4){
+                    if(imgs.indexOf(curr) == 5){
                         document.getElementById("display-img").setAttribute("src", imgs[0])
                     }
                     else{
@@ -121,12 +121,16 @@
                     }
                 }
             </script>
-            
         </div>
         <div>
             <!--Animation-->
             <a name="animation"></a><h2>ANIMATIONS</h2></a>
             <p>Here's a few of some gifs he animated! Go check out his other animations on <a href = "https://www.youtube.com/channel/UCdkkQvJoB0kGgYHCYwSkdww">Youtube!</a></p>
+            <img src = "images/animation/guitar.gif">
+            <img src = "images/animation/math.gif">
+            <img src = "images/animation/storyboard.gif">
+            <img src = "images/animation/weird.gif">
+            <img src = "images/animation/wolf.gif">
         </div>
         <div>
             <!--Music-->
