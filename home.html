@@ -14,17 +14,18 @@
             var curr = getComputedStyle(element).right;
             if(curr==='30px'){
                 document.getElementById("music-open").style.right = "-1000px";
-                document.getElementById("bg").currentTime = 0;
                 document.getElementById("bg").pause();
             }
             else{
                 document.getElementById("music-open").style.right = "30px";
+                document.getElementById("bg").currentTime = 0;
+                document.getElementById("bg").loop = true;
                 document.getElementById("bg").play();
             } 
         }
     </script>
     <div id = music-open>
-        Now Playing: Aquarium City 
+        Now Playing: AQUARIUM CITY
     </div>
     <h1>Louie Zong</h1>
     <p id = name>Website Created by Sissy Pan</p>
@@ -57,19 +58,19 @@
             <div class= games-display>
                 <div class = game>
                     <a href = "https://everydaylouie.itch.io/toad-in-the-hole">
-                    <img src = images/toad-in-the-hole.png>
+                    <img src = images/games/toad-in-the-hole.png>
                     <p>Toad In A Hole</p>
                     </a>
                 </div>
                 <div class = game>
                     <a href = "https://everydaylouie.itch.io/windsor-road">
-                    <img src = images/Ovzat3.png>
+                    <img src = images/games/Ovzat3.png>
                     <p>windsor road</p>
                     </a>
                 </div>
                 <div class = game>
                     <a href = "https://everydaylouie.itch.io/dreampiano">
-                    <img src = images/dream-piano.png>
+                    <img src = images/games/dream-piano.png>
                     <p>dream.piano</p>
                     </a>
                 </div>
@@ -77,13 +78,13 @@
             <div class = games-display>
                 <div class = game>
                     <a href = "https://everydaylouie.itch.io/bird-race">
-                    <img src = images/bird-race.png>
+                    <img src = images/games/bird-race.png>
                     <p>Bird Race</p>
                     </a>
                 </div>
                 <div class = game>
                     <a href = "https://everydaylouie.itch.io/yahaha-beats">
-                    <img src = images/yahahabeats.png>
+                    <img src = images/games/yahahabeats.png>
                     <p>yahaha beats</p>
                     </a>
                 </div>
@@ -93,15 +94,73 @@
         <div>
             <!--Art-->
             <a name="art"></a><h2>ART</h2></a>
+            <p>Here's some of his art!</p>
+            <div id = carousel>
+                <img id = "display-img" src = "images/art/dog.png">
+                <br>
+               <a href = #art> <button onClick = "prev()">prev</button><button href = #art onClick ="next()">next</button></a>
+            </div>
+            <script>
+                const imgs= ["images/art/dog.png", "images/art/3dlouie.png", "images/art/apple.png", "images/art/bird.png", "images/art/wbb.png"]
+                function prev(){
+                    var curr = document.getElementById("display-img").getAttribute("src")
+                    if(imgs.indexOf(curr) == 0){
+                        document.getElementById("display-img").setAttribute("src", imgs[4])
+                    }
+                    else{
+                        document.getElementById("display-img").setAttribute("src", imgs[imgs.indexOf(curr)-1])
+                    }
+                }
+                function next(){
+                    var curr = document.getElementById("display-img").getAttribute("src")
+                    if(imgs.indexOf(curr) == 4){
+                        document.getElementById("display-img").setAttribute("src", imgs[0])
+                    }
+                    else{
+                        document.getElementById("display-img").setAttribute("src", imgs[imgs.indexOf(curr)+1])
+                    }
+                }
+            </script>
+            
         </div>
         <div>
             <!--Animation-->
             <a name="animation"></a><h2>ANIMATIONS</h2></a>
+            <p>Here's a few of some gifs he animated! Go check out his other animations on <a href = "https://www.youtube.com/channel/UCdkkQvJoB0kGgYHCYwSkdww">Youtube!</a></p>
         </div>
         <div>
             <!--Music-->
             <a name="music"><h2>MUSIC</h2></a>
-            <button onClick = "playSong('audio/cheesy-street.mp3', 'CHEEZY STREET ft. Dante NK')"></button>
+            <p>Click on an image to play the song!</p>
+            <div class = music-display>
+                <div class = "song">
+                    <button id = "CS" onClick = "playSong('audio/cheesy-street.mp3', 'CHEEZY STREET ft. Dante NK')"></button>
+                <p> CHEEZY STREET ft. Dante NK</p>
+                </div>
+                <div class = "song">
+                    <button id = "AQ"onClick = "playSong('audio/aquarium-city.mp3', 'AQUARIUM CITY')"></button>
+                <p> AQUARIUM CITY</p>
+                </div>
+                <div class = "song">
+                    <button id = "BZ"onClick = "playSong('audio/breezy.mp3', 'Breezy Slide ft. Brian David Gilbert')"></button>
+                <p>Breezy Slide ft. Brian David Gilbert</p>
+                </div>
+            </div>
+
+            <div class = music-display>
+                <div class = "song">
+                    <button id = "WR"onClick = "playSong('audio/wireframe.mp3', 'Wireframe or Render')"></button>
+                <p>Wireframe or Render</p>
+                </div>
+                <div class = "song">
+                    <button id = "GD" onClick = "playSong('audio/ghost.mp3', 'Ghost Duet')"></button>
+                <p>Ghost Duet</p>
+                </div>
+                <div class = "song">
+                    <button id = "TH"onClick = "playSong('audio/thumbnail.mp3', 'thumbnail ft. Brian David Gilbert')"></button>
+                <p>thumbnail ft. Brian David Gilbert</p>
+                </div>
+            </div>
         </div>
         <script>
             function playSong(song, name)
@@ -123,5 +182,5 @@
             }
         </script>
     </div>
-    <img src = images/louietop.png alt = "Picture of Louie Zong playing the guitar" id = "louie-cutout">
+    <img src = images/other/louietop.png alt = "Picture of Louie Zong playing the guitar" id = "louie-cutout">
 </body>

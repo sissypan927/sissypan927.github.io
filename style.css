@@ -16,6 +16,7 @@ html{
     justify-content:center;
     font-family: Butler;
     color:#4c261a;
+    height:4500px;
 }
 h1{
     z-index:2;
@@ -97,10 +98,71 @@ button{
     background-color:#5a9f54;
     color: #b4cf5d;
 }
+.music-display{
+    display:flex;
+    gap:10px;
+    margin-left:-30px;
+    margin-bottom:10px;
+}
+.song{
+    border:solid;
+    text-align:center;
+    border-radius:20px;
+    border-color:#3a83383b;
+    background-color:#b4cf5d9e;
+    border-width: 3px;
+}
+.song p{
+    font-size:20px;
+    margin-top:-30px;
+}
+.song button{
+    margin: 50px;
+    width: 250px;
+    height:250px;
+    border:none;
+}
+#CS{
+    background:url(images/album/ratTaxi.png);
+    background-size:100%;
+}
+#AQ{
+    background:url(images/album/aqCity.png);
+    background-size:100%;
+}
+#BZ{
+    background:url(images/album/breeze.png);
+    background-size:100%;
+}
+#WR{
+    background:url(images/album/wireframe.png);
+    background-size:100%;
+}
+#GD{
+    background:url(images/album/ghost.png);
+    background-size:100%;
+}
+#TH{
+    background:url(images/album/thumbnail.png);
+    background-size:100%;
+}
+#carousel{
+   margin:100px;
+   margin-top: 80px;
+   margin-left:130px;
+   justify-content:center;
+}
+#carousel button{
+    color:#db5123;
+    margin-right:10px;
+}
+#display-img{
+    max-width:750px;
+}
 #music-button{
     z-index:5;
     position:fixed;
-    background:url(images/music-icon.png);
+    background:url(images/other/music-icon.png);
     padding:20px;
     margin:10px;
     background-color:#b4cf5d;
@@ -143,12 +205,14 @@ button{
     width: 500px;
 }
 #main-content{
-    margin-left: 145px;
+    display:block;
+    margin-top:200px;
+    margin-bottom:140px;
+    margin-left: 145px; 
     position:absolute;
     box-shadow: -5px 3px 8px #110e0158, 5px 5px 8px #110e0158;
     background-color: rgb(249, 242, 227);
-    margin-top:200px;
-    height: 5000px;
+    height: 4000px;
     width: 1000px;
     padding:100px;
 }
