@@ -16,7 +16,7 @@ html{
     justify-content:center;
     font-family: Butler;
     color:#4c261a;
-    height:4500px;
+    height:625%;
 }
 h1{
     z-index:2;
@@ -122,6 +122,15 @@ button{
     height:250px;
     border:none;
 }
+.animation-display{
+    justify-content:center;
+    display:flex;
+    margin:30px;
+    gap:30px;
+}
+.animation-display img{
+    max-width: 500px;
+}
 #CS{
     background:url(images/album/ratTaxi.png);
     background-size:100%;
@@ -151,6 +160,7 @@ button{
    margin-top: 80px;
    margin-left:130px;
    justify-content:center;
+   margin-bottom: 40px;
 }
 #carousel button{
     color:#db5123;
@@ -204,7 +214,30 @@ button{
     margin-left:1000px;
     width: 500px;
 }
+#robo{
+    z-index:2;
+    position:relative;
+    width:300px;
+    margin-top:1025px;
+    margin-left:30px;
+    transform:rotateZ(15deg);
+}
+#cat{
+    z-index: 0;
+    position:relative;
+    width:300px;
+    margin-top:1300px;
+    margin-left:1200px;
+}
+#inst{
+    z-index:2;
+    position:relative;
+    margin-top:1200px;
+    margin-left:30px;
+    width:300px;
+}
 #main-content{
+    z-index:1;
     display:block;
     margin-top:200px;
     margin-bottom:140px;
@@ -212,7 +245,7 @@ button{
     position:absolute;
     box-shadow: -5px 3px 8px #110e0158, 5px 5px 8px #110e0158;
     background-color: rgb(249, 242, 227);
-    height: 4000px;
+    height: 4500px;
     width: 1000px;
     padding:100px;
 }
